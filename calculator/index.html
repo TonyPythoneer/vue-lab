@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+    <script src="./index.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+    <div id="app">
+        <div>{{ monitor }}</div>
+        <div v-for="buttonRow in buttonBoard">
+            <button
+                v-for="button in buttonRow"
+                v-on:click="clickButton(button)"
+                v-if="button !== null">
+                {{ button }}
+            </button>
+        </div>
+    </div>
+</body>
+</html>

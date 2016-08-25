@@ -1,0 +1,27 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "calculator",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TonyPythoneer/vue-lab.git"
+  },
+  "scripts": {
+    "build": "webpack && npm run build:jade",
+    "build:jade": "jade index.jade",
+    "watch": "webpack -w"
+  },
+  "author": "TonyPythoneer",
+  "license": "ISC",
+  "typescript": {
+    "definition": "typings/tsd.d.ts"
+  },
+  "dependencies": {
+    "vue": "^1.0.24"
+  },
+  "devDependencies": {
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.9",
+    "webpack": "^1.13.0"
+  }
+}

@@ -1,0 +1,12 @@
+# Node.js
+#
+node_modules/
+
+# Typescript
+#
+typings/
+dist/
+
+# My style
+#
+!src/**/typings/
